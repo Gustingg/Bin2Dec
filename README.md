@@ -2,7 +2,7 @@
 
 **Idea from [here](https://github.com/florinpop17/app-ideas)**<br/>
 
-**Sample:** [Codesandbox](https://codesandbox.io/s/bin2dec-0w4oq)
+**Sample:** [Codesandbox](https://bin2dec-0w4oq.codesandbox.io)
 
 **Tier:** 1-Beginner
 
