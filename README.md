@@ -1,8 +1,8 @@
 ## Binary to Decimal Converter
 
-**Nome from [here](https://github.com/florinpop17/app-ideas)**<br/>
+**Idea from [here](https://github.com/florinpop17/app-ideas)**<br/>
 
-
+**Sample:** [Codesandbox](https://codesandbox.io/s/bin2dec-0w4oq)
 
 **Tier:** 1-Beginner
 
