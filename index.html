@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+            Tradutor de Binário
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    </head>
+    <body>
+        <form style="width:25%; margin: 5rem auto;">
+            <div class="mb-3">
+                <label for="bin" class="form-label">Binário</label>
+                <input class="form-control" id="bin">
+            </div>
+            <div class="mb-3">
+                <label for="tradBin" class="form-label">Tradução</label>
+                <p id="tradBin"></p>
+            </div>
+        </form>        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script>
+            $("#bin").keyup(function(){
+                var bin = $(this).val();
+                var res = bin.split("");
+                var binTrad = 0;
+                for(var i = 0; i < res.length; i++){
+                    if (res[i] != "0" && res[i] != "1"){
+                        binTrad = "Número binário inválido. Por favor, digite apenas 0 e 1.";
+                        break;
+                    }
+                    if (res[i] != "0"){
+                        binTrad = binTrad + Math.pow(2, i);
+                    }
+                };
+                $("#tradBin").text(binTrad);
+            })
+        </script>
+    </body>
+</html>
