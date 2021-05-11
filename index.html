@@ -24,15 +24,15 @@
             $("#bin").keyup(function(){
                 var bin = $(this).val();
                 var res = bin.split("");
+                res = res.reverse();
                 var binTrad = 0;
                 for(var i = 0; i < res.length; i++){
                     if (res[i] != "0" && res[i] != "1"){
                         binTrad = "Número binário inválido. Por favor, digite apenas 0 e 1.";
                         break;
                     }
-                    if (res[i] != "0"){
-                        binTrad = binTrad + Math.pow(2, i);
-                    }
+                    console.log("Teste: "+ res[i] +" - "+ Math.pow(2, i)+ " - "+ i);
+                    binTrad = binTrad + (res[i] * Math.pow(2, i));
                 };
                 $("#tradBin").text(binTrad);
             })
